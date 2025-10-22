@@ -4,6 +4,7 @@ import { Footer } from "./Footer";
 import { ConsultationForm } from "./ConsultationForm";
 import { Phone, MessageCircle, ChevronUp } from "lucide-react";
 import { Button } from "./ui/button";
+import { useSmoothScroll } from "@/hooks/useSmoothScroll";
 
 interface LayoutProps {
   children: ReactNode;
@@ -13,6 +14,9 @@ export const Layout = ({ children }: LayoutProps) => {
   const [isFormOpen, setIsFormOpen] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [hasAutoOpened, setHasAutoOpened] = useState(false);
+  
+  // Enable smooth scrolling for hash navigation
+  useSmoothScroll();
 
   useEffect(() => {
     // Auto-open form on first visit

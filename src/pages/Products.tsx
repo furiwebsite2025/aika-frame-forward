@@ -37,7 +37,7 @@ export const Products = () => {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="py-20 bg-background">
+      <section id="products-hero" className="py-20 bg-background">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-heading font-bold mb-6 animate-fade-in">
             Our Products
@@ -49,7 +49,7 @@ export const Products = () => {
       </section>
 
       {/* Products Grid */}
-      <section className="py-12 bg-card">
+      <section id="products-grid" className="py-12 bg-card">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {products.map((product, index) => (
@@ -92,7 +92,7 @@ export const Products = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-accent text-accent-foreground">
+      <section id="products-cta" className="py-20 bg-accent text-accent-foreground">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-heading font-bold mb-6">
             Need Help Choosing?

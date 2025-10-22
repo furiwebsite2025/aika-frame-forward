@@ -24,7 +24,7 @@ export const Gallery = () => {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="py-20 bg-background">
+      <section id="gallery-hero" className="py-20 bg-background">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-heading font-bold mb-6 animate-fade-in">
             Our Gallery
@@ -36,7 +36,7 @@ export const Gallery = () => {
       </section>
 
       {/* Filter Tabs */}
-      <section className="py-8 bg-card border-y border-border">
+      <section id="gallery-filters" className="py-8 bg-card border-y border-border">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center gap-4">
             {["all", "windows", "doors", "interiors"].map((category) => (
@@ -57,7 +57,7 @@ export const Gallery = () => {
       </section>
 
       {/* Gallery Grid */}
-      <section className="py-12 bg-background">
+      <section id="gallery-grid" className="py-12 bg-background">
         <div className="container mx-auto px-4">
           <div className="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4">
             {filteredImages.map((image, index) => (

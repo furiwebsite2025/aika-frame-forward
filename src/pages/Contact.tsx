@@ -14,7 +14,7 @@ export const Contact = () => {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="py-20 bg-background">
+      <section id="contact-hero" className="py-20 bg-background">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-heading font-bold mb-6 animate-fade-in">
             Get In Touch
@@ -26,7 +26,7 @@ export const Contact = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-12 bg-card">
+      <section id="contact-form" className="py-12 bg-card">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Info */}
@@ -143,7 +143,7 @@ export const Contact = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-accent text-accent-foreground">
+      <section id="experience-centre" className="py-20 bg-accent text-accent-foreground">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-heading font-bold mb-6">
             Visit Our Experience Centre

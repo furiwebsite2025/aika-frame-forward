@@ -5,7 +5,7 @@ export const About = () => {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="py-20 bg-background">
+      <section id="about-hero" className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
@@ -46,7 +46,7 @@ export const About = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-accent text-accent-foreground">
+      <section id="stats" className="py-20 bg-accent text-accent-foreground">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="animate-fade-in">
@@ -66,7 +66,7 @@ export const About = () => {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-20 bg-card">
+      <section id="mission-vision" className="py-20 bg-card">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="p-8 rounded-xl bg-background border border-border">

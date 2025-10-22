@@ -8,6 +8,7 @@ export const Home = () => {
     <div className="pt-20">
       {/* Hero Section */}
       <section
+        id="hero"
         className="relative min-h-[90vh] flex items-center justify-center bg-cover bg-center"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
@@ -29,7 +30,7 @@ export const Home = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-card">
+      <section id="features" className="py-20 bg-card">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-heading font-bold text-center mb-12">
             Why Choose AIKA?
@@ -64,7 +65,7 @@ export const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-accent text-accent-foreground">
+      <section id="cta" className="py-20 bg-accent text-accent-foreground">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-heading font-bold mb-6">
             Ready to Transform Your Space?
